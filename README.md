@@ -283,6 +283,35 @@ GET /market/news?query=tech+stocks&max_results=10
 
 MIT License - See LICENSE file for details
 
+## Next Steps
+
+To build a trust and certification framework for AI agents, and we wanted to get your feedback on its direction.
+
+We are thinking of designing a hybrid evaluation pipeline that combines LLM judges for scalability with human evaluators for spot checks and audits. Rule-based metrics detect hallucinations or bias, and a governance layer defines oversight, appeals, and risk mitigation. The agent receives feedback, reattempts tasks, and earns a JSON-based digital certificate when its score exceeds a threshold. A dashboard built in Streamlit or Gradio displays the agent's performance report card, certification badge, and task logs.
+
+Our goal is to build a proof of concept showing how an agent can iteratively improve and earn certification through transparent benchmarking. We are also exploring how to handle data privacy and ensure the credibility of RAG data.
+
+### Integration with NEST Sandbox (Project NANDA)
+
+We are exploring integration with the NEST sandbox on Project NANDA (NEST = NANDA Sandbox & Testbed), an MIT Media Lab effort to build an "Internet of AI agents". NEST provides a unified dashboard and testbed for running, observing, and governing autonomous agents.
+
+**Key NEST Components:**
+- **NANDA Index/Registry**: Global catalog where agents publish AgentFacts (identity & capabilities) for discovery and verification
+- **Governance & Security**: Zero Trust Agentic Access (ZTAA) plus Agent Visibility & Control (AVC) for enterprise oversight
+- **Interoperability Layer**: Bridges across protocols (Anthropic MCP, Google A2A, Microsoft NLWeb, HTTPS) for agent communication
+- **Adaptive Resolver**: Dynamic, context-aware routing that picks optimal endpoints based on load, location, and trust
+
+**Potential Integration Flow:**
+- Register our Financial Intelligence Agent in the NANDA Index with AgentFacts describing its capabilities
+- Deploy in NEST to run experiments and monitor traffic/logs across agents and data sources
+- Connect with other financial agents using the interoperability stack for secure communication
+- Leverage the governance framework for certification and trust verification
+
+**Resources:**
+- Project overview: [nanda.media.mit.edu](https://nanda.media.mit.edu)
+- NEST dashboard: [index.projectnanda.org](https://index.projectnanda.org)
+- Technical papers: Available on arXiv covering Index architecture and Adaptive Resolver
+
 ## Acknowledgments
 
 Built with FastAPI, Streamlit, OpenAI GPT-4, and open-source financial data providers.
