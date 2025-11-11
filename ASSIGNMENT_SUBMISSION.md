@@ -6,8 +6,8 @@ This project implements a comprehensive financial analysis platform featuring Re
 
 ## Team Information
 - **Project Name**: Financial Intelligence System with RAG
-- **Repository**: https://github.com/yourusername/agentic-web-trust-layer
-- **Team Members**: [Your Name Here]
+- **Repository**: https://github.com/Anitej185/agentic-web-trust-layer
+- **Team Members**: Anitej Thamma, Hassan Ahmed
 
 ## Key Features Implemented
 
